@@ -1,0 +1,17 @@
+{
+  "windows": {
+    "extract": {
+      "title": "Data Extractor",
+      "geometry": [800, 500],
+      "styles": {
+        "background": "#f5f5f5",
+        "font_family": ""
+      }
+    },
+    "batch": {
+      "title": "Batch Processor",
+      "geometry": [900, 600],
+      "modal": false
+    }
+  }
+}

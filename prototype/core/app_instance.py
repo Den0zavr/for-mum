@@ -1,7 +1,7 @@
-from PyQt6.QtWidgets import QApplication, QStyleFactory
+from PySide6.QtWidgets import QApplication, QStyleFactory
+from utils import Singleton
 
-
-class AppTemplate(QApplication):
+class AppTemplate(QApplication, Singleton):
     def __init__(self, argv):
         super().__init__(argv)
 
@@ -10,4 +10,4 @@ class AppTemplate(QApplication):
     def setup_application(self):
         self.setStyle(QStyleFactory.create("Fusion"))
         self.setApplicationName("Excel Assistant")
-        self.setOrganizationName("")
+        self.setOrganizationName("whatever")

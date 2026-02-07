@@ -39,7 +39,7 @@ class window(Tk, Singleton):
             case ".xls":
                 handleSuffix().is_xls(file)
             case _:
-                print(f'Выбран файл с другим расширением - "{file.get_file_suffix()}"')
+                print(f"Выбран файл с другим расширением - ", file.get_file_suffix())
         print("После открытия работаю с этим файлом:", file.get_file_path())
 
     def call_extract_data_window(self):

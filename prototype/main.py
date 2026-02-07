@@ -1,14 +1,11 @@
-import sys
-import os
+import sys; import os
+from core import AppTemplate
+from ui import MainWindow
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from ui import MainWindow
-from core import AppTemplate
-
 def main():
-    app = AppTemplate(sys.argv)
-
+    app = AppTemplate([])
     main_win = MainWindow()
     main_win.show()
 

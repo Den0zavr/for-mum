@@ -1,0 +1,1 @@
+from .window_config import get_window_config
